@@ -8,17 +8,6 @@
 
 import UIKit
 
-class pos {
-    
-    enum state {
-        case x
-        case o
-        case empty
-    }
-    
-    var value = state.empty
-}
-
 class ViewController: UIViewController {
     
     var game = Game()
@@ -35,6 +24,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
+    }
+    
+    func resetView() {
+        for subview in self.board.subviews {
+            if let button = subview as? UIButton {
+                print(button.imageView?.image)
+                button.setImage(nil, for: [])
+            }
+        }
+        turnImage.image = xImage
+        self.winLabel.text = ""
+        self.game.reset()
     }
 
     
@@ -54,26 +55,37 @@ class ViewController: UIViewController {
                 }
             }
         }
+        if(game.state() == .Won){
+            let winAlert = UIAlertController(title: "\(game.player(previous: true).rawValue) Wins!", message: "Game Over", preferredStyle: UIAlertControllerStyle.alert)
+            let resetAction = UIAlertAction(title: "New Game", style: .default, handler: { (action) in
+                self.resetView()
+                self.game.reset()
+            })
+            winAlert.addAction(resetAction)
+            self.present(winAlert, animated: true, completion: nil)
+            print("won run")
+        }
+        else if(game.state() == .Tied) {
+            let winAlert = UIAlertController(title: "CAT!", message: "Game Over", preferredStyle: UIAlertControllerStyle.alert)
+            let resetAction = UIAlertAction(title: "New Game", style: .default, handler: { (resetAction) in
+                self.resetView()
+                self.game.reset()
+            })
+            winAlert.addAction(resetAction)
+            self.present(winAlert, animated: true, completion: nil)
+            
+        }
         winLabel.text = game.state().rawValue
     }
     
 
     
     //Reset Board and Win Label on Press\\
-    @IBAction func resetPressed(_ sender: AnyObject) {
-        
-        for subview in board.subviews {
-            print("hi")
-            if let button = subview as? UIButton {
-                print(button.imageView?.image)
-                button.setImage(nil, for: [])
-            }
-        }
-        
-        winLabel.text = ""
+    
+    
+    @IBAction func newGamePressed(_ sender: AnyObject) {
+        self.resetView()
         game.reset()
     }
-
-
 }
 

@@ -8,8 +8,9 @@
 
 import Foundation
 
-enum Player {
-    case X, O
+enum Player: String {
+    case X = "X"
+    case O = "O"
 }
 
 enum CellState {
@@ -42,9 +43,9 @@ class Game {
         if(previous) {
             switch (turn % 2) {
                 case 1:
-                    return Player.X
-                default:
                     return Player.O
+                default:
+                    return Player.X
             }
         }
         else {
@@ -71,7 +72,7 @@ class Game {
             ((board[0] == board[3]) && (board[3] == board[6]) && (board[0] != .Empty)) ||
             ((board[1] == board[4]) && (board[4] == board[7]) && (board[1] != .Empty)) ||
             ((board[2] == board[5]) && (board[5] == board[8]) && (board[2] != .Empty)) ||
-            ((board[2] == board[4]) && (board[4] == board[4]) && (board[2] != .Empty)) ||
+            ((board[2] == board[4]) && (board[4] == board[6]) && (board[2] != .Empty)) ||
             ((board[3] == board[4]) && (board[4] == board[5]) && (board[3] != .Empty)) ||
             ((board[6] == board[7]) && (board[7] == board[8]) && (board[6] != .Empty))
         

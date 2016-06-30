@@ -132,7 +132,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Turn:">
                                         <attributes>
-                                            <font key="NSFont" size="36" name="ChalkboardSE-Regular"/>
+                                            <font key="NSFont" size="36" name="Futura-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -160,28 +160,47 @@
                                 </attributedString>
                                 <color key="highlightedColor" red="1" green="0.0" blue="0.94635091900763424" alpha="0.0" colorSpace="calibratedRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFq-IN-bfT">
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="0.25665175878968183" green="0.31762124517462942" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ub-QU-X54"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gd8-13-hmw" userLabel="NewGameView">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iDf-d9-iZ4">
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="New Game">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.98091579771183346" blue="0.99134235210047295" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="20" name="Futura-CondensedExtraBold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="newGamePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEi-tT-UkQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.036029007789939164" blue="0.28421547774869105" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="iDf-d9-iZ4" firstAttribute="centerX" secondItem="gd8-13-hmw" secondAttribute="centerX" id="0AK-43-SWj"/>
+                                    <constraint firstItem="iDf-d9-iZ4" firstAttribute="centerY" secondItem="gd8-13-hmw" secondAttribute="centerY" id="5XF-Tk-15j"/>
+                                    <constraint firstItem="iDf-d9-iZ4" firstAttribute="leading" secondItem="gd8-13-hmw" secondAttribute="leading" constant="10" id="GOz-OL-00p"/>
+                                    <constraint firstAttribute="trailing" secondItem="iDf-d9-iZ4" secondAttribute="trailing" constant="10" id="d2V-7F-Vqq"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9aN-QK-4EA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="20p-3X-mAd"/>
-                            <constraint firstItem="zFq-IN-bfT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AUb-N9-C9p"/>
+                            <constraint firstItem="gd8-13-hmw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9YJ-Rl-gcf"/>
                             <constraint firstItem="9aN-QK-4EA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="Bdd-Q7-hHy"/>
+                            <constraint firstAttribute="bottom" secondItem="gd8-13-hmw" secondAttribute="bottom" id="Dak-8l-8I0"/>
+                            <constraint firstItem="gd8-13-hmw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="615" id="HFE-OW-rOV"/>
                             <constraint firstItem="Fd7-kO-LzK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="75" id="JdT-t2-vm3"/>
                             <constraint firstItem="Fd7-kO-LzK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MSV-ep-8Ja"/>
                             <constraint firstItem="h3z-5Q-JG6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mt6-Sn-eQM"/>
+                            <constraint firstAttribute="trailing" secondItem="gd8-13-hmw" secondAttribute="trailing" id="PVC-tg-kHB"/>
                             <constraint firstItem="Edv-KZ-JZo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XXv-hM-6pj"/>
                             <constraint firstItem="Edv-KZ-JZo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="reh-qG-pE9"/>
-                            <constraint firstAttribute="bottom" secondItem="zFq-IN-bfT" secondAttribute="bottom" constant="120" id="sZy-Sp-ips"/>
-                            <constraint firstAttribute="bottom" secondItem="h3z-5Q-JG6" secondAttribute="bottom" constant="30" id="uya-Wq-rdd"/>
+                            <constraint firstAttribute="bottom" secondItem="h3z-5Q-JG6" secondAttribute="bottom" constant="80" id="uya-Wq-rdd"/>
                         </constraints>
                     </view>
                     <connections>
