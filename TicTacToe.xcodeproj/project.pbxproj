@@ -11,6 +11,12 @@
 		615F44431D241D4500991495 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615F44421D241D4500991495 /* GameController.swift */; };
 		616409FD1D21A087000DB0C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616409FC1D21A087000DB0C9 /* Main.storyboard */; };
 		616409FF1D21A096000DB0C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616409FE1D21A096000DB0C9 /* LaunchScreen.storyboard */; };
+		61A24F1C1D25A28400D70F63 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A24F1B1D25A28400D70F63 /* Onboarding.storyboard */; };
+		61A24F1E1D25A39100D70F63 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A24F1D1D25A39100D70F63 /* User.swift */; };
+		61A24F201D25A60E00D70F63 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A24F1F1D25A60E00D70F63 /* UserController.swift */; };
+		61A24F231D25A66F00D70F63 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A24F211D25A66F00D70F63 /* LoginController.swift */; };
+		61A24F241D25A66F00D70F63 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A24F221D25A66F00D70F63 /* RegisterController.swift */; };
+		61A5CF581D2A7AEE00E57BB5 /* AvailableGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5CF571D2A7AEE00E57BB5 /* AvailableGamesViewController.swift */; };
 		61EC96B31D21738900FEC396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EC96B21D21738900FEC396 /* AppDelegate.swift */; };
 		61EC96B51D21738900FEC396 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EC96B41D21738900FEC396 /* ViewController.swift */; };
 		61EC96BA1D21738900FEC396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61EC96B91D21738900FEC396 /* Assets.xcassets */; };
@@ -21,6 +27,12 @@
 		615F44421D241D4500991495 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameController.swift; path = emplate/GameController.swift; sourceTree = "<group>"; };
 		616409FC1D21A087000DB0C9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		616409FE1D21A096000DB0C9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61A24F1B1D25A28400D70F63 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		61A24F1D1D25A39100D70F63 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = emplate/User.swift; sourceTree = "<group>"; };
+		61A24F1F1D25A60E00D70F63 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = emplate/UserController.swift; sourceTree = "<group>"; };
+		61A24F211D25A66F00D70F63 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = emplate/LoginController.swift; sourceTree = "<group>"; };
+		61A24F221D25A66F00D70F63 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterController.swift; path = emplate/RegisterController.swift; sourceTree = "<group>"; };
+		61A5CF571D2A7AEE00E57BB5 /* AvailableGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvailableGamesViewController.swift; path = erSwift/AvailableGamesViewController.swift; sourceTree = "<group>"; };
 		61EC96AF1D21738900FEC396 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61EC96B21D21738900FEC396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61EC96B41D21738900FEC396 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +70,12 @@
 		61EC96B11D21738900FEC396 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				61A24F1B1D25A28400D70F63 /* Onboarding.storyboard */,
+				61A5CF571D2A7AEE00E57BB5 /* AvailableGamesViewController.swift */,
+				61A24F211D25A66F00D70F63 /* LoginController.swift */,
+				61A24F221D25A66F00D70F63 /* RegisterController.swift */,
+				61A24F1F1D25A60E00D70F63 /* UserController.swift */,
+				61A24F1D1D25A39100D70F63 /* User.swift */,
 				616409FE1D21A096000DB0C9 /* LaunchScreen.storyboard */,
 				61EC96B21D21738900FEC396 /* AppDelegate.swift */,
 				61EC96B41D21738900FEC396 /* ViewController.swift */,
@@ -132,6 +150,7 @@
 				616409FF1D21A096000DB0C9 /* LaunchScreen.storyboard in Resources */,
 				61EC96BA1D21738900FEC396 /* Assets.xcassets in Resources */,
 				616409FD1D21A087000DB0C9 /* Main.storyboard in Resources */,
+				61A24F1C1D25A28400D70F63 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +161,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A24F201D25A60E00D70F63 /* UserController.swift in Sources */,
 				61EC96B51D21738900FEC396 /* ViewController.swift in Sources */,
 				615F44431D241D4500991495 /* GameController.swift in Sources */,
 				615F44411D2409C100991495 /* Game.swift in Sources */,
+				61A24F241D25A66F00D70F63 /* RegisterController.swift in Sources */,
+				61A24F1E1D25A39100D70F63 /* User.swift in Sources */,
 				61EC96B31D21738900FEC396 /* AppDelegate.swift in Sources */,
+				61A5CF581D2A7AEE00E57BB5 /* AvailableGamesViewController.swift in Sources */,
+				61A24F231D25A66F00D70F63 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

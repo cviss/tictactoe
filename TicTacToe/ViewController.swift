@@ -63,7 +63,6 @@ class ViewController: UIViewController {
             })
             winAlert.addAction(resetAction)
             self.present(winAlert, animated: true, completion: nil)
-            print("won run")
         }
         else if(game.state() == .Tied) {
             let winAlert = UIAlertController(title: "CAT!", message: "Game Over", preferredStyle: UIAlertControllerStyle.alert)
